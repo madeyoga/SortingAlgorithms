@@ -5,6 +5,7 @@ from random import shuffle
 def insertion_sort(array):
     for i in range(len(array)):
         current_key = array[i]
+        # Loop from i - 1 to 0
         for j in range(i - 1, -1, -1):
             if current_key < array[j]:
                 array[j + 1], array[j] = array[j], array[j + 1]
