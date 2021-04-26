@@ -8,8 +8,8 @@ def insertion_sort(array):
         for j in range(i - 1, -1, -1):
             if current_key < array[j]:
                 array[j + 1], array[j] = array[j], array[j + 1]
-                continue
-            break
+            else:
+                break
     return array
 
 
@@ -22,4 +22,3 @@ shuffle(random_array)
 print(random_array)
 
 print(insertion_sort(random_array))
-
