@@ -42,7 +42,7 @@ namespace Test
         public static void InsertionSort(this List<int> arr)
         {
             int temp; 
-            int	key;
+            int key;
 
             for (var i = 0; i < arr.Count; i++)
             {
