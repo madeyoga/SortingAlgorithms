@@ -26,7 +26,7 @@ namespace Test
             }
             Console.WriteLine();
 
-            // memanggil Method BubbleSort()
+            // memanggil Method InsertionSort()
             arr.InsertionSort();
 
             // tampilakan isi array setelah di sorting
