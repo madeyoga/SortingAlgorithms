@@ -14,7 +14,7 @@ function mergeSort(array) {
 	var leftPointer = 0;
 	var rightPointer = 0;
 
-	var tempList = [];
+	let tempList = [];
 	while (leftPointer < sortedLeft.length && rightPointer < sortedRight.length) {
 		left = sortedLeft[leftPointer];
 		right = sortedRight[rightPointer];
@@ -44,7 +44,7 @@ function mergeSort(array) {
 
 let array = [];
 
-dataLength = 1000000
+dataLength = 10000000
 
 for (var i = 0; i < dataLength; i++) {
 	// Get random number from 1 to dataLength
@@ -56,7 +56,19 @@ for (var i = 0; i < dataLength; i++) {
 array = array.sort(() => Math.random() - 0.5)
 
 console.log(array);
+var startTime = new Date();
 
 sortedArray = mergeSort(array);
+
+endTime = new Date();
+
+var timeDiff = endTime - startTime; //in ms
+console.log(timeDiff + "ms sorting time.");
+// strip the ms
+timeDiff /= 1000;
+
+// get seconds 
+var seconds = Math.round(timeDiff);
+console.log(seconds + " seconds elapsed.")
 
 console.log(sortedArray);
