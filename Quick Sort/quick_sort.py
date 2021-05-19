@@ -54,4 +54,4 @@ print(random_array)
 
 quick_sort(random_array)
 
-print(random_array)
+##print(random_array)
